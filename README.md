@@ -42,6 +42,22 @@ J and S are working on `geojson`, a pkg for geojson classes, which we can use in
 * [geoops](https://github.com/ropenscilabs/geoops)
 * [geosonlint](https://github.com/ropenscilabs/geojsonlint)
 
+__Long term__
+
+Implement [geobuf] format (binary geojson) in protolite:
+
+* [protolite](https://github.com/jeroenooms/protolite)
+
+## images and graphics
+
+__target date: Aug 2016__
+
+The new `magick` package opens up a lot of possibilities for advanced image processing in R. In July we have implemented the core foundations and fixed low-level problems to make the package work seamlessly on all platforms. In august we make R interfaces more user friendly and improve documenation.
+
+* [magick](https://github.com/ropensci/magick)
+
+Based on magick, we can derive other packages to work with animation and graphics post-processing (e.g. for journal publications). We can also tie this in with raster types for spatial applications. 
+
 ## biodiversity data
 
 __target date: Oct 2016__
@@ -54,3 +70,18 @@ Continual patch releases of these are put out, but we could target a single date
 * [scrubr](https://github.com/ropenscilabs/scrubr)
 * [mapr](https://github.com/ropensci/mapr)
 * etc... there are more
+
+## infrastructure
+
+__target date: fall 2016__
+
+We are working on a new system for massively concurrent requests in `curl` to support high performance scarpers and crawlers. Because this is a big update, it needs a few more rounds of tweaking and testing and revision.
+
+* [curl](https://github.com/jeroenooms/curl)
+
+
+
+
+
+
+
