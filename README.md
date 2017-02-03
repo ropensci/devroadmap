@@ -20,7 +20,7 @@ releases is missing see the `NEWS`/`NEWS.md` file in the repository.
 
 ### taxonomy
 
-__target date: Jan 2017__
+__target date: Mar 2017__
 
 `taxize` is our core taxonomy package that's been around for years, and is used widely. We're targeting a [v1.0 release](https://github.com/ropensci/taxize/milestones/v1.0) for January 2017. Before that, along with a `v0.8` release of `taxize` (~ Aug/Sep) we can target first versions of `taxizedb` and `taxa` (with `binomen` folded in).
 
@@ -31,7 +31,7 @@ __target date: Jan 2017__
 
 ### biodiversity data
 
-__target date: Feb 2017__
+__target date: Apr 2017__
 
 Continual patch releases of these are put out, but we could target a single date to release new versions of a suite of these pkgs:
 
@@ -42,16 +42,15 @@ Continual patch releases of these are put out, but we could target a single date
 * [mapr](https://github.com/ropensci/mapr)
 * etc... there are more
 
-### infrastructure
 
-__target date: fall 2016__
+## Completed
+
+### infrastructure
 
 We are working on a new system for massively concurrent requests in `curl` to support high performance scarpers and crawlers. Because this is a big update, it needs a few more rounds of tweaking and testing and revision.
 
 * [curl](https://github.com/jeroenooms/curl)
 
-
-## Completed
 
 ### images and graphics
 
