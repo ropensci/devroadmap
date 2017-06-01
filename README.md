@@ -16,6 +16,11 @@ releases is missing see the `NEWS`/`NEWS.md` file in the repository.
 
 --------
 
+## CRAN PACKAGES
+
+ - [jeroen@berkeley.edu](https://cran.r-project.org/web/checks/check_results_jeroen_at_berkeley.edu.html)
+ - [myrmecocystus@gmail.com](https://cran.r-project.org/web/checks/check_results_myrmecocystus_at_gmail.com.html)
+
 ## Work in Progress
 
 ### system infrastructure
