@@ -16,6 +16,39 @@ releases is missing see the `NEWS`/`NEWS.md` file in the repository.
 
 --------
 
+## Work in Progress
+
+### system infrastructure
+
+Jeroen is working on new packages `sys` and `unix` to improve interacting with low level system from R. This will make packages that require system calls more robust and easier to develop. 
+
+* [unix](https://cran.r-project.org/web/packages/unix/index.html)
+* [sys](https://cran.r-project.org/web/packages/sys/index.html)
+
+Also doing research into additional methods of securing R such as libcgroups and docker). The `RAppArmor` package needs cleanup now that most functionality has been extracted into `unix`. 
+
+### text processing and analysis
+
+Lots of [suggestions](https://github.com/ropensci/textworkshop17/issues/5) from the textworkshop in London for wrapping new text processing libraries and utilities.
+
+* [antiword](https://cran.r-project.org/web/packages/antiword/index.html) (DONE: on cran)
+* [dynamic topic models](https://github.com/blei-lab/dtm)
+* [bigartm](https://github.com/bigartm/bigartm)
+* [compact language detector](https://github.com/CLD2Owners/cld2)
+
+### security
+
+Improve security in R. We want to bootstrap a trust network based on the ropensci community to make it safer to install R packages from arbitrary sources (github, cran, etc). Git's ability to sign commits, combined with Github's GPG API and/or keybase for identifying peers.
+
+* [gpg](https://cran.r-project.org/web/packages/gpg/vignettes/intro.html) needs work to support multiple keyrings.
+* [notary](https://github.com/ropenscilabs/notary) developed at unconf17, experiment with a version of `install_github` that shows and verifies signatures.
+
+Bob Rudis has a keybase package which interacts with the keybase API that we might borrow from. I also want to look into another approached based off letsencrypt. 
+
+* [openssl](https://cran.r-project.org/web/packages/openssl/index.html) needs a mainenance release to address bugs and features
+* [jose](https://cran.r-project.org/web/packages/jose/) implements Javascript Object Signing and Encryption based on `openssl` and `jsonlite` packages. Needed for letsencrypt client.
+* `acme` is the protocol used by letsenrypt. It uses `jose` for signing and encrypting tokens. To get started I will implement a letsencrypt client for R (which also allows for further testing and developing `jose`). One that works, perhaps we can use the certificates for other purposes as well.
+
 ## To Do
 
 ### taxonomy
