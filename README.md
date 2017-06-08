@@ -36,10 +36,11 @@ Also doing research into additional methods of securing R such as libcgroups and
 
 Lots of [suggestions](https://github.com/ropensci/textworkshop17/issues/5) from the textworkshop in London for wrapping new text processing libraries and utilities.
 
-* [antiword](https://cran.r-project.org/web/packages/antiword/index.html) (DONE: on cran)
-* [dynamic topic models](https://github.com/blei-lab/dtm)
+* [antiword](https://cran.r-project.org/web/packages/antiword/index.html) DONE: on cran
+* [~dynamic topic models~](https://github.com/blei-lab/dtm): Started wrapping but turns out to be bad library. Discontinued. 
 * [bigartm](https://github.com/bigartm/bigartm)
-* [compact language detector](https://github.com/CLD2Owners/cld2)
+* [compact language detector 2](https://github.com/CLD2Owners/cld2) DONE: on cran
+* [compact language detector 3](https://github.com/google/cld3) DONE: on cran
 
 ### security
 
