@@ -28,9 +28,13 @@ releases is missing see the `NEWS`/`NEWS.md` file in the repository.
 Jeroen is working on new packages `sys` and `unix` to improve interacting with low level system from R. This will make packages that require system calls more robust and easier to develop. 
 
 * [unix](https://cran.r-project.org/web/packages/unix/index.html)
-* [sys](https://cran.r-project.org/web/packages/sys/index.html)
+* [sys](https://cran.r-project.org/web/packages/sys/index.html) (used by e.g `antiword`, `unrtf`, etc)
 
-Also doing research into additional methods of securing R such as libcgroups and docker). The `RAppArmor` package needs cleanup now that most functionality has been extracted into `unix`. 
+### Maintenance needed
+
+ - CRAN has requested maintenance on the `brotli` package. Also the upstream library has had a lot of breaking changes in v1.0
+ - The `tesseract` package seems broken all of a sudden. Probably breaking upstream changes.
+ - The `RAppArmor` package needs cleanup now that most functionality has been extracted into `unix`. 
 
 ### text processing and analysis
 
@@ -54,6 +58,8 @@ Bob Rudis has a keybase package which interacts with the keybase API that we mig
 * [openssl](https://cran.r-project.org/web/packages/openssl/index.html) needs a mainenance release to address bugs and features
 * [jose](https://cran.r-project.org/web/packages/jose/) implements Javascript Object Signing and Encryption based on `openssl` and `jsonlite` packages. Needed for letsencrypt client.
 * `acme` is the protocol used by letsenrypt. It uses `jose` for signing and encrypting tokens. To get started I will implement a letsencrypt client for R (which also allows for further testing and developing `jose`). One that works, perhaps we can use the certificates for other purposes as well.
+
+Also doing research into additional methods of securing R such as libcgroups and docker). 
 
 ## To Do
 
