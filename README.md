@@ -45,6 +45,7 @@ Lots of [suggestions](https://github.com/ropensci/textworkshop17/issues/5) from 
 * [bigartm](https://github.com/bigartm/bigartm)
 * [compact language detector 2](https://github.com/CLD2Owners/cld2) DONE: on cran
 * [compact language detector 3](https://github.com/google/cld3) DONE: on cran
+* [unrtf](https://github.com/ropensci/unrtf) Done: on cran
 
 ### security
 
