@@ -66,25 +66,27 @@ Also doing research into additional methods of securing R such as libcgroups and
 
 ### taxonomy
 
-__target date: May 2017__
+__target date: June 2017__
+
+_2017-06-16 update: on track to get big taxonomy blog post out in the next few weeks_
 
 `taxize` is our core taxonomy package that's been around for years, and is used widely. We're targeting a [v1.0 release](https://github.com/ropensci/taxize/milestones/v1.0) for late in 2017, but will have a pre v1 for this target release.
 
 * [taxize](https://github.com/ropensci/taxize)
 * [taxizedb](https://github.com/ropenscilabs/taxizedb) - use SQL dumps of taxonomic databases locally __ON CRAN__
-* [binomen](https://github.com/ropensci/binomen) - dplyr like interface for taxonomic data __this will likely be merged with `taxa`__
+* [binomen](https://github.com/ropensci/binomen) - dplyr like interface for taxonomic data __being merged with `taxa`__
 * [taxa](https://github.com/ropensci/taxa) - classes for taxonomic data - in the future to be used by all other taxonomy packages __waiting on this getting to CRAN, should be very soon__ - co-maintiner and his PI and I writing a paper on this as well
 * [wikitaxa](https://github.com/ropensci/wikitaxa)
 * [ritis](https://github.com/ropensci/ritis)
 
 ### http mocking/caching
 
-__target date: June 2017__
+__target date: July 2017__
 
 `webmockr` mocks HTTP requests, and `vcr` is used mostly to integrate with unit tests to cache HTTP requests. `webmockr` is almost on CRAN, and `vcr` will follow soon after.
 
-* [webmockr](https://github.com/ropensci/webmockr)
-* [vcr](https://github.com/ropensci/vcr)
+* [webmockr](https://github.com/ropensci/webmockr) __now on CRAN__
+* [vcr](https://github.com/ropensci/vcr) _working on getting a 1st version to CRAN_
 
 Both above will right away integrate with [crul](https://github.com/ropensci/crul) - but both will integrate with other http clients later (`httr`, `curl`, `RCurl`, etc.)
 
@@ -92,7 +94,7 @@ I will use `vcr` heavily in test suites in probably all the API wrappers I maint
 
 ### biodiversity data
 
-__target date: July 2017__
+__target date: August 2017__
 
 Continual patch releases of these are put out, but targeting a grouped single date to release new versions of a suite of these pkgs:
 
@@ -101,7 +103,7 @@ Continual patch releases of these are put out, but targeting a grouped single da
 * [ecoengine](https://github.com/ropensci/ecoengine) - @karthik maintaining - not sure if there's an obvious milestone that can be reached for this 
 * [scrubr](https://github.com/ropenscilabs/scrubr) - [milestone v0.3](https://github.com/ropensci/scrubr/milestone/4)
 * [mapr](https://github.com/ropensci/mapr) - [milestone v0.4](https://github.com/ropensci/mapr/milestone/5)
-* [seaaroundus](https://github.com/ropensci/seaaroundus) - recently took this over - push out a new version of this
+* [seaaroundus](https://github.com/ropensci/seaaroundus) - recently took this over - __pushing out a 1st CRAN version soon__
 * etc... there are more
 
 
