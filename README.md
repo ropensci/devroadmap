@@ -64,24 +64,9 @@ Also doing research into additional methods of securing R such as libcgroups and
 
 ## To Do
 
-### taxonomy
-
-__target date: June 2017__
-
-_2017-06-16 update: on track to get big taxonomy blog post out in the next few weeks_
-
-`taxize` is our core taxonomy package that's been around for years, and is used widely. We're targeting a [v1.0 release](https://github.com/ropensci/taxize/milestones/v1.0) for late in 2017, but will have a pre v1 for this target release.
-
-* [taxize](https://github.com/ropensci/taxize)
-* [taxizedb](https://github.com/ropenscilabs/taxizedb) - use SQL dumps of taxonomic databases locally __ON CRAN__
-* [binomen](https://github.com/ropensci/binomen) - dplyr like interface for taxonomic data __being merged with `taxa`__
-* [taxa](https://github.com/ropensci/taxa) - classes for taxonomic data - in the future to be used by all other taxonomy packages __waiting on this getting to CRAN, should be very soon__ - co-maintiner and his PI and I writing a paper on this as well
-* [wikitaxa](https://github.com/ropensci/wikitaxa)
-* [ritis](https://github.com/ropensci/ritis)
-
 ### http mocking/caching
 
-__target date: July 2017__
+__target date: August 2017__
 
 `webmockr` mocks HTTP requests, and `vcr` is used mostly to integrate with unit tests to cache HTTP requests. `webmockr` is almost on CRAN, and `vcr` will follow soon after.
 
@@ -94,7 +79,7 @@ I will use `vcr` heavily in test suites in probably all the API wrappers I maint
 
 ### biodiversity data
 
-__target date: August 2017__
+__target date: October 2017__
 
 Continual patch releases of these are put out, but targeting a grouped single date to release new versions of a suite of these pkgs:
 
@@ -108,6 +93,17 @@ Continual patch releases of these are put out, but targeting a grouped single da
 
 
 ## Completed
+
+### taxonomy
+
+`taxize` is our core taxonomy package that's been around for years, and is used widely. We're targeting a [v1.0 release](https://github.com/ropensci/taxize/milestones/v1.0) for late in 2017, but will have a pre v1 for this target release.
+
+* [taxize](https://github.com/ropensci/taxize)
+* [taxizedb](https://github.com/ropenscilabs/taxizedb) - use SQL dumps of taxonomic databases locally __ON CRAN__
+* [binomen](https://github.com/ropensci/binomen) - dplyr like interface for taxonomic data __being merged with `taxa`__
+* [taxa](https://github.com/ropensci/taxa) - classes for taxonomic data - in the future to be used by all other taxonomy packages __waiting on this getting to CRAN, should be very soon__ - co-maintiner and his PI and I writing a paper on this as well
+* [wikitaxa](https://github.com/ropensci/wikitaxa)
+* [ritis](https://github.com/ropensci/ritis)
 
 ### infrastructure
 
