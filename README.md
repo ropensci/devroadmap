@@ -21,31 +21,20 @@ releases is missing see the `NEWS`/`NEWS.md` file in the repository.
  - [jeroen@berkeley.edu](https://cran.r-project.org/web/checks/check_results_jeroen_at_berkeley.edu.html)
  - [myrmecocystus@gmail.com](https://cran.r-project.org/web/checks/check_results_myrmecocystus_at_gmail.com.html)
 
-## Work in Progress
-
-### system infrastructure
-
-Jeroen is working on new packages `sys` and `unix` to improve interacting with low level system from R. This will make packages that require system calls more robust and easier to develop. 
-
-* [unix](https://cran.r-project.org/web/packages/unix/index.html)
-* [sys](https://cran.r-project.org/web/packages/sys/index.html) (used by e.g `antiword`, `unrtf`, etc)
-
-### Maintenance needed
+### Maintenance
 
  - CRAN has requested maintenance on the `brotli` package. Also the upstream library has had a lot of breaking changes in v1.0
  - The `tesseract` package seems broken all of a sudden. Probably breaking upstream changes.
  - The `RAppArmor` package needs cleanup now that most functionality has been extracted into `unix`. 
 
-### text processing and analysis
 
-Lots of [suggestions](https://github.com/ropensci/textworkshop17/issues/5) from the textworkshop in London for wrapping new text processing libraries and utilities.
+### Website / Turorial
 
-* [antiword](https://cran.r-project.org/web/packages/antiword/index.html) DONE: on cran
-* [~dynamic topic models~](https://github.com/blei-lab/dtm): Started wrapping but turns out to be bad library. Discontinued. 
-* [bigartm](https://github.com/bigartm/bigartm)
-* [compact language detector 2](https://github.com/CLD2Owners/cld2) DONE: on cran
-* [compact language detector 3](https://github.com/google/cld3) DONE: on cran
-* [unrtf](https://github.com/ropensci/unrtf) Done: on cran
+Ideas for the new website:
+
+ - Create rOpenSci `rmarkdown` theme to generate rOpenSci tutorials as vignettes
+ - Experiment with interactive tutorials for rOpenSci tools using new OpenCPU
+ - Blog about `ropensci.ocpu.io` for remotely calling ropensci tools
 
 ### security
 
@@ -61,6 +50,12 @@ Bob Rudis has a keybase package which interacts with the keybase API that we mig
 * `acme` is the protocol used by letsenrypt. It uses `jose` for signing and encrypting tokens. To get started I will implement a letsencrypt client for R (which also allows for further testing and developing `jose`). One that works, perhaps we can use the certificates for other purposes as well.
 
 Also doing research into additional methods of securing R such as libcgroups and docker). 
+
+### Magick
+
+ - Review feature requests
+ - Implement drawing system (perhaps via a graphics device)
+ - Update latest libmagick++
 
 ## To Do
 
@@ -94,6 +89,17 @@ Continual patch releases of these are put out, but targeting a grouped single da
 
 ## Completed
 
+### text processing and analysis
+
+Lots of [suggestions](https://github.com/ropensci/textworkshop17/issues/5) from the textworkshop in London for wrapping new text processing libraries and utilities.
+
+* [antiword](https://cran.r-project.org/web/packages/antiword/index.html) DONE: on cran
+* [~dynamic topic models~](https://github.com/blei-lab/dtm): Started wrapping but turns out to be bad library. Discontinued. 
+* [bigartm](https://github.com/bigartm/bigartm)
+* [compact language detector 2](https://github.com/CLD2Owners/cld2) DONE: on cran
+* [compact language detector 3](https://github.com/google/cld3) DONE: on cran
+* [unrtf](https://github.com/ropensci/unrtf) Done: on cran
+
 ### taxonomy
 
 `taxize` is our core taxonomy package that's been around for years, and is used widely. We're targeting a [v1.0 release](https://github.com/ropensci/taxize/milestones/v1.0) for late in 2017, but will have a pre v1 for this target release.
@@ -111,6 +117,12 @@ We are working on a new system for massively concurrent requests in `curl` to su
 
 * [curl](https://github.com/jeroenooms/curl)
 
+### system infrastructure
+
+Jeroen is working on new packages `sys` and `unix` to improve interacting with low level system from R. This will make packages that require system calls more robust and easier to develop. 
+
+* [unix](https://cran.r-project.org/web/packages/unix/index.html)
+* [sys](https://cran.r-project.org/web/packages/sys/index.html) (used by e.g `antiword`, `unrtf`, etc)
 
 ### images and graphics
 
