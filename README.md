@@ -19,13 +19,13 @@ releases is missing see the `NEWS`/`NEWS.md` file in the repository.
 ## CRAN PACKAGES
 
  - [jeroen@berkeley.edu](https://cran.r-project.org/web/checks/check_results_jeroen_at_berkeley.edu.html)
- - [myrmecocystus@gmail.com](https://cran.r-project.org/web/checks/check_results_myrmecocystus_at_gmail.com.html)
+ - [myrmecocystus@gmail.com](https://cran.r-project.org/web/checks/check_results_myrmecocystus_at_gmail.com.html) & [myrmecocystus+r@gmail.com](https://cran.r-project.org/web/checks/check_results_myrmecocystus_r_at_gmail.com.html)
 
 ### Maintenance
 
  - CRAN has requested maintenance on the `brotli` package. Also the upstream library has had a lot of breaking changes in v1.0
  - The `tesseract` package seems broken all of a sudden. Probably breaking upstream changes.
- - The `RAppArmor` package needs cleanup now that most functionality has been extracted into `unix`. 
+ - The `RAppArmor` package needs cleanup now that most functionality has been extracted into `unix`.
 
 
 ### Website / Turorial
@@ -43,21 +43,19 @@ Improve security in R. We want to bootstrap a trust network based on the ropensc
 * [gpg](https://cran.r-project.org/web/packages/gpg/vignettes/intro.html) needs work to support multiple keyrings.
 * [notary](https://github.com/ropenscilabs/notary) developed at unconf17, experiment with a version of `install_github` that shows and verifies signatures.
 
-Bob Rudis has a keybase package which interacts with the keybase API that we might borrow from. I also want to look into another approached based off letsencrypt. 
+Bob Rudis has a keybase package which interacts with the keybase API that we might borrow from. I also want to look into another approached based off letsencrypt.
 
 * [openssl](https://cran.r-project.org/web/packages/openssl/index.html) needs a mainenance release to address bugs and features
 * [jose](https://cran.r-project.org/web/packages/jose/) implements Javascript Object Signing and Encryption based on `openssl` and `jsonlite` packages. Needed for letsencrypt client.
 * `acme` is the protocol used by letsenrypt. It uses `jose` for signing and encrypting tokens. To get started I will implement a letsencrypt client for R (which also allows for further testing and developing `jose`). One that works, perhaps we can use the certificates for other purposes as well.
 
-Also doing research into additional methods of securing R such as libcgroups and docker). 
+Also doing research into additional methods of securing R such as libcgroups and docker).
 
 ### Magick
 
  - Review feature requests
  - Implement drawing system (perhaps via a graphics device)
  - Update latest libmagick++
-
-## To Do
 
 ### http mocking/caching
 
@@ -72,6 +70,20 @@ Both above will right away integrate with [crul](https://github.com/ropensci/cru
 
 I will use `vcr` heavily in test suites in probably all the API wrappers I maintain. (and `vcr` depends on `webmockr`) - should see wide adoption outside of ropensci as there's nothing like these two out there currently.
 
+### text mining
+
+__target date: September 2017__
+
+A few pkgs need updates, will try to organize releases to coincide + blog post:
+
+* [fulltext](https://github.com/ropensci/fulltext) - shooting for [milestone v0.2](https://github.com/ropensci/fulltext/milestone/3) - lots of new things, demo abstract mining, full text mining, etc.
+* [microdemic](https://github.com/ropenscilabs/microdemic) - new pkg to work with Microsoft Academic Search API
+* [rcoreoa](https://github.com/ropensci/rcoreoa) - new pkg to work with CORE search API - also used in OpenknowledgeMaps
+* [jaod](https://github.com/ropenscilabs/jaod) - new pkg to work with Directory of Open Access Journals API 
+* [crminer](https://github.com/ropensci/crminer) - new version to go out
+* [rbace](https://github.com/ropenscilabs/rbace) - new pkg to work with BASE search API - also used in OpenknowledgeMaps
+
+
 ### biodiversity data
 
 __target date: October 2017__
@@ -80,11 +92,12 @@ Continual patch releases of these are put out, but targeting a grouped single da
 
 * [rgbif](https://github.com/ropensci/rgbif) - shooting for [milestone v1.0](https://github.com/ropensci/rgbif/milestone/10)
 * [spocc](https://github.com/ropensci/spocc) - [milestone v0.8](https://github.com/ropensci/spocc/milestone/15)
-* [ecoengine](https://github.com/ropensci/ecoengine) - @karthik maintaining - not sure if there's an obvious milestone that can be reached for this 
+* [ecoengine](https://github.com/ropensci/ecoengine) - @karthik maintaining - not sure if there's an obvious milestone that can be reached for this
 * [scrubr](https://github.com/ropenscilabs/scrubr) - [milestone v0.3](https://github.com/ropensci/scrubr/milestone/4)
 * [mapr](https://github.com/ropensci/mapr) - [milestone v0.4](https://github.com/ropensci/mapr/milestone/5)
 * [seaaroundus](https://github.com/ropensci/seaaroundus) - recently took this over - __pushing out a 1st CRAN version soon__
 * etc... there are more
+
 
 
 ## Completed
@@ -94,7 +107,7 @@ Continual patch releases of these are put out, but targeting a grouped single da
 Lots of [suggestions](https://github.com/ropensci/textworkshop17/issues/5) from the textworkshop in London for wrapping new text processing libraries and utilities.
 
 * [antiword](https://cran.r-project.org/web/packages/antiword/index.html) DONE: on cran
-* [~dynamic topic models~](https://github.com/blei-lab/dtm): Started wrapping but turns out to be bad library. Discontinued. 
+* [~dynamic topic models~](https://github.com/blei-lab/dtm): Started wrapping but turns out to be bad library. Discontinued.
 * [bigartm](https://github.com/bigartm/bigartm)
 * [compact language detector 2](https://github.com/CLD2Owners/cld2) DONE: on cran
 * [compact language detector 3](https://github.com/google/cld3) DONE: on cran
@@ -119,7 +132,7 @@ We are working on a new system for massively concurrent requests in `curl` to su
 
 ### system infrastructure
 
-Jeroen is working on new packages `sys` and `unix` to improve interacting with low level system from R. This will make packages that require system calls more robust and easier to develop. 
+Jeroen is working on new packages `sys` and `unix` to improve interacting with low level system from R. This will make packages that require system calls more robust and easier to develop.
 
 * [unix](https://cran.r-project.org/web/packages/unix/index.html)
 * [sys](https://cran.r-project.org/web/packages/sys/index.html) (used by e.g `antiword`, `unrtf`, etc)
