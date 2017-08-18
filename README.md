@@ -61,10 +61,10 @@ Also doing research into additional methods of securing R such as libcgroups and
 
 __target date: August 2017__
 
-`webmockr` mocks HTTP requests, and `vcr` is used mostly to integrate with unit tests to cache HTTP requests. `webmockr` is almost on CRAN, and `vcr` will follow soon after.
+`webmockr` mocks HTTP requests, and `vcr` is used mostly to integrate with unit tests to cache HTTP requests. `webmockr` is now on CRAN and improvements are being made. `vcr` is very close to a CRAN release.
 
 * [webmockr](https://github.com/ropensci/webmockr) __now on CRAN__
-* [vcr](https://github.com/ropensci/vcr) _working on getting a 1st version to CRAN_
+* [vcr](https://github.com/ropensci/vcr) _close to 1st version on CRAN_
 
 Both above will right away integrate with [crul](https://github.com/ropensci/crul) - but both will integrate with other http clients later (`httr`, `curl`, `RCurl`, etc.)
 
@@ -79,7 +79,7 @@ A few pkgs need updates, will try to organize releases to coincide + blog post:
 * [fulltext](https://github.com/ropensci/fulltext) - shooting for [milestone v0.2](https://github.com/ropensci/fulltext/milestone/3) - lots of new things, demo abstract mining, full text mining, etc.
 * [microdemic](https://github.com/ropenscilabs/microdemic) - new pkg to work with Microsoft Academic Search API
 * [rcoreoa](https://github.com/ropensci/rcoreoa) - new pkg to work with CORE search API - also used in OpenknowledgeMaps
-* [jaod](https://github.com/ropenscilabs/jaod) - new pkg to work with Directory of Open Access Journals API 
+* [jaod](https://github.com/ropenscilabs/jaod) - new pkg to work with Directory of Open Access Journals API
 * [crminer](https://github.com/ropensci/crminer) - new version to go out
 * [rbace](https://github.com/ropenscilabs/rbace) - new pkg to work with BASE search API - also used in OpenknowledgeMaps
 
