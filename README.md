@@ -21,19 +21,31 @@ releases is missing see the `NEWS`/`NEWS.md` file in the repository.
  - [jeroen@berkeley.edu](https://cran.r-project.org/web/checks/check_results_jeroen_at_berkeley.edu.html)
  - [myrmecocystus@gmail.com](https://cran.r-project.org/web/checks/check_results_myrmecocystus_at_gmail.com.html) & [myrmecocystus+r@gmail.com](https://cran.r-project.org/web/checks/check_results_myrmecocystus_r_at_gmail.com.html)
 
-### Maintenance
+### Magick and Image Processing
+
+Jeroen working on new infrastructure for image processing and analysis in R.
+
+ - ~Implement magick feature requests~ **complete**
+ - ~Implement drawing system (perhaps via a graphics device)~ **complete**
+ - ~Integrate with Tesseract~ **complete**
+ - ~Blog post~ **complete**
+ - Update latest libmagick++: Done but need to do again.
+ - Refactoring documentation: **in progress**
+ - To do: Extract image classes, make pkg more extensible
+ - To do: Implement image analsysis tools
+
+### Overdue Maintenance
 
  - CRAN has requested maintenance on the `brotli` package. Also the upstream library has had a lot of breaking changes in v1.0
- - The `tesseract` package seems broken all of a sudden. Probably breaking upstream changes.
+ - ~The `tesseract` package seems broken all of a sudden. Probably breaking upstream changes.~ **complete**
  - The `RAppArmor` package needs cleanup now that most functionality has been extracted into `unix`.
 
-
-### Website / Turorial
+### Tutorial / Playground
 
 Ideas for the new website:
 
  - Create rOpenSci `rmarkdown` theme to generate rOpenSci tutorials as vignettes
- - Experiment with interactive tutorials for rOpenSci tools using new OpenCPU
+ - Experiment with interactive tutorials (playground) for rOpenSci tools using new OpenCPU
  - Blog about `ropensci.ocpu.io` for remotely calling ropensci tools
 
 ### security
@@ -50,12 +62,6 @@ Bob Rudis has a keybase package which interacts with the keybase API that we mig
 * `acme` is the protocol used by letsenrypt. It uses `jose` for signing and encrypting tokens. To get started I will implement a letsencrypt client for R (which also allows for further testing and developing `jose`). One that works, perhaps we can use the certificates for other purposes as well.
 
 Also doing research into additional methods of securing R such as libcgroups and docker).
-
-### Magick
-
- - Review feature requests
- - Implement drawing system (perhaps via a graphics device)
- - Update latest libmagick++
 
 ### http mocking/caching
 
@@ -136,15 +142,6 @@ Jeroen is working on new packages `sys` and `unix` to improve interacting with l
 
 * [unix](https://cran.r-project.org/web/packages/unix/index.html)
 * [sys](https://cran.r-project.org/web/packages/sys/index.html) (used by e.g `antiword`, `unrtf`, etc)
-
-### images and graphics
-
-The new `magick` package opens up a lot of possibilities for advanced image processing in R. In July we have implemented the core foundations and fixed low-level problems to make the package work seamlessly on all platforms. In august we make R interfaces more user friendly and improve documenation.
-
-* [magick](https://github.com/ropensci/magick)
-
-Based on magick, we can derive other packages to work with animation and graphics post-processing (e.g. for journal publications). We can also tie this in with raster types for spatial applications.
-
 
 ### geospatial
 
