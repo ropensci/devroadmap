@@ -65,7 +65,7 @@ Also doing research into additional methods of securing R such as libcgroups and
 
 ### http mocking/caching
 
-__target date: August 2017__
+__target date: late September/early October 2017__
 
 `webmockr` mocks HTTP requests, and `vcr` is used mostly to integrate with unit tests to cache HTTP requests. `webmockr` is now on CRAN and improvements are being made. `vcr` is very close to a CRAN release.
 
@@ -78,7 +78,7 @@ I will use `vcr` heavily in test suites in probably all the API wrappers I maint
 
 ### text mining
 
-__target date: September 2017__
+__target date: November 2017__
 
 A few pkgs need updates, will try to organize releases to coincide + blog post:
 
@@ -92,7 +92,7 @@ A few pkgs need updates, will try to organize releases to coincide + blog post:
 
 ### biodiversity data
 
-__target date: October 2017__
+__target date: December 2017__
 
 Continual patch releases of these are put out, but targeting a grouped single date to release new versions of a suite of these pkgs:
 
