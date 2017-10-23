@@ -63,9 +63,15 @@ Bob Rudis has a keybase package which interacts with the keybase API that we mig
 
 Also doing research into additional methods of securing R such as libcgroups and docker).
 
+### CRAN checks API
+
+A REST API for cran check results. code: https://github.com/ropensci/cchecksapi api: https://cranchecks.info/heartbeat  The main work done, but tweaking from feedback from various folks. 
+
+Once it's basically done, may try to set up a notification system to ropensci pkg maintainers (and others) to opt in to notifications (email, etc.) when there's errors, warnings, notes, etc. 
+
 ### http mocking/caching
 
-__target date: late September/early October 2017__
+__target date: late November 2017__
 
 `webmockr` mocks HTTP requests, and `vcr` is used mostly to integrate with unit tests to cache HTTP requests. `webmockr` is now on CRAN and improvements are being made. `vcr` is very close to a CRAN release.
 
@@ -78,7 +84,7 @@ I will use `vcr` heavily in test suites in probably all the API wrappers I maint
 
 ### text mining
 
-__target date: November 2017__
+__target date: January 2018__
 
 A few pkgs need updates, will try to organize releases to coincide + blog post:
 
