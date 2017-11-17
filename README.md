@@ -63,6 +63,17 @@ Bob Rudis has a keybase package which interacts with the keybase API that we mig
 
 Also doing research into additional methods of securing R such as libcgroups and docker).
 
+### geospatial 
+
+No big new projects in this space, but rather the focus here is to try to get some more traction for the GeoJSON workflow in R. Using pkgs we've developed and others out there, I want to get out a numbef of blog posts/screencasts/vignettes for how to do spatial work centered around GeoJSON - and point out where its worse and where better than the sp/sf workflow. 
+
+There's already a lot of traction for `geojsonio` package (see [SO questions](https://stackoverflow.com/search?tab=newest&q=%5br%5d%20%27geojsonio%27)) - so that seems like a definite area to focus on.
+
+Does include though some new pkgs or versions:
+
+* [geoops](https://github.com/ropenscilabs/geoops) - first version is up on CRAN - but lots more to do adding methods and optimizing, etc.
+* [geofilter](https://github.com/ropenscilabs/geofilter) - not on CRAN yet. hoping to get up soon. will help users filter through GeoJSON just like you can for data.frame's/tibble's - using `jq`. i think this is an important piece for people to consider using a GeoJSON based workflow.
+
 ### CRAN checks API
 
 A REST API for cran check results. code: https://github.com/ropensci/cchecksapi api: https://cranchecks.info/heartbeat  The main work done, but tweaking from feedback from various folks. 
@@ -71,7 +82,7 @@ Once it's basically done, may try to set up a notification system to ropensci pk
 
 ### http mocking/caching
 
-__target date: late November 2017__
+__target date: late January 2018__
 
 `webmockr` mocks HTTP requests, and `vcr` is used mostly to integrate with unit tests to cache HTTP requests. `webmockr` is now on CRAN and improvements are being made. `vcr` is very close to a CRAN release.
 
@@ -82,9 +93,11 @@ Both above will right away integrate with [crul](https://github.com/ropensci/cru
 
 I will use `vcr` heavily in test suites in probably all the API wrappers I maintain. (and `vcr` depends on `webmockr`) - should see wide adoption outside of ropensci as there's nothing like these two out there currently.
 
+Update: taking longer to get to this than I thought - so busy with maintenance and other projects.
+
 ### text mining
 
-__target date: January 2018__
+__target date: February 2018__
 
 A few pkgs need updates, will try to organize releases to coincide + blog post:
 
@@ -98,7 +111,7 @@ A few pkgs need updates, will try to organize releases to coincide + blog post:
 
 ### biodiversity data
 
-__target date: December 2017__
+__target date: February 2018__
 
 Continual patch releases of these are put out, but targeting a grouped single date to release new versions of a suite of these pkgs:
 
