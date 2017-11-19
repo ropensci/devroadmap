@@ -21,23 +21,24 @@ releases is missing see the `NEWS`/`NEWS.md` file in the repository.
  - [jeroen@berkeley.edu](https://cran.r-project.org/web/checks/check_results_jeroen_at_berkeley.edu.html)
  - [myrmecocystus@gmail.com](https://cran.r-project.org/web/checks/check_results_myrmecocystus_at_gmail.com.html) & [myrmecocystus+r@gmail.com](https://cran.r-project.org/web/checks/check_results_myrmecocystus_r_at_gmail.com.html)
 
-### Magick and Image Processing
+### Image Processing
 
-Jeroen working on new infrastructure for image processing and analysis in R.
+Jeroen is working on a long term better infrastructure for image processing and analysis in R. Currently this includes dealing with formats for pictures and graphics, but the goal is to expand to video as well as spatial and [medical imaging](https://cran.r-project.org/web/views/MedicalImaging.html).
 
  - ~Implement magick feature requests~ **complete**
  - ~Implement drawing system (perhaps via a graphics device)~ **complete**
  - ~Integrate with Tesseract~ **complete**
  - ~Blog post~ **complete**
- - Update latest libmagick++: Done but need to do again.
- - Refactoring documentation: **in progress**
- - To do: Extract image classes, make pkg more extensible
- - To do: Implement image analsysis tools
+ - ~Update latest libmagick++: Done but need to do again~ **complete**
+ - ~Refactoring documentation~ **complete**
+ - Extract image classes, make pkg more extensible
+ - Start exposing some magick image analsysis tools
+ - Learn about medical imaging
+ - Look into video processing library
 
 ### Overdue Maintenance
 
  - CRAN has requested maintenance on the `brotli` package. Also the upstream library has had a lot of breaking changes in v1.0
- - ~The `tesseract` package seems broken all of a sudden. Probably breaking upstream changes.~ **complete**
  - The `RAppArmor` package needs cleanup now that most functionality has been extracted into `unix`.
 
 ### Tutorial / Playground
